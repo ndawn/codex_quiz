@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <link type="text/css" rel="stylesheet" href="/quiz.css">
+    <script type="text/javascript" src="/pretty.js"></script>
+    <script type="text/javascript" src="/add.js"></script>
+</head>
+<body>
+<div class="loading"><div></div></div>
+<header><nav>
+    <a href="/"><img src="/logo.png"></a>
+    <p>Made for <a href="https://ifmo.su">CodeX</a> with &#10084;<a href="https://github.com/ndawn/codex_quiz"> by ndawn</a></p>
+</nav></header>
+<main>
+    <h1>Добавление теста</h1>
+    <form id="quiz" name="quiz">
+        <div class="input_block">
+            <input type="text" name="quiz.heading" placeholder="Название теста">
+            <div class="border"></div>
+        </div>
+        <div class="input_block">
+            <textarea name="quiz.body" placeholder="Описание теста"></textarea>
+            <div class="border"></div>
+        </div>
+        <div class="question1">
+            <h2>Вопрос 1</h2>
+            <input type="text" name="question1.heading" placeholder="Название вопроса">
+            <textarea name="question1.body" placeholder="Описание вопроса"></textarea>
+            <input type="text" name="question1.ans_1" placeholder="Первый вариант ответа">
+            <input id="question1.correct" type="radio" name="question1.correct" value="1">
+            <label for="question1.correct">Правильный ответ</label>
+            <input type="text" name="question1.ans_2" placeholder="Второй вариант ответа">
+            <input id="question1.correct" type="radio" name="question1.correct" value="2">
+            <label for="question1.correct">Правильный ответ</label>
+            <input type="text" name="question1.ans_3" placeholder="Третий вариант ответа">
+            <input id="question1.correct" type="radio" name="question1.correct" value="3">
+            <label for="question1.correct">Правильный ответ</label>
+        </div>
+        <div class="block add"><p>Добавить вопрос</p><div class="border"></div></div>
+    </form>
+    <button class="submit block"><b>Добавить тест</b></button>
+</main>
+</body>
+</html>
